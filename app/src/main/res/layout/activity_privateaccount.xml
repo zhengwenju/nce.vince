@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/capture_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/percentrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="10.6%w">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="100%h"
+                app:layout_widthPercent="100%h">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@mipmap/back"
+                    app:layout_heightPercent="45.5%h"
+                    app:layout_widthPercent="22.7%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/private1"
+                app:layout_textSizePercent="5%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.flyco.tablayout.SegmentTabLayout
+            android:id="@+id/tl_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_gravity="center_horizontal"
+            app:layout_heightPercent="8%w"
+            app:layout_marginLeftPercent="24.3%w"
+            app:layout_marginRightPercent="24.3%w"
+            app:layout_marginTopPercent="2%w"
+            app:tl_bar_color="@color/white"
+            app:tl_indicator_color="@color/blue"
+            app:tl_indicator_corner_radius="8dp"
+            app:tl_textsize="@dimen/sp_13" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginLeftPercent="0%w"
+            app:layout_marginRightPercent="0%w"
+            app:layout_marginTopPercent="12.3%w"></FrameLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</RelativeLayout>

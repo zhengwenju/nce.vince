@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/ldentifyC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="认筹转让"
+            android:gravity="center"
+            android:textColor="@drawable/text_tran"
+            android:textSize="16dp" />
+        <RadioButton
+            android:id="@+id/myTransfer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="转让记录"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@drawable/text_tran"
+            />
+
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/white1"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fram_bill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"></FrameLayout>
+</LinearLayout>

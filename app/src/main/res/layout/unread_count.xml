@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/unread_iv"
+        android:layout_toRightOf="@+id/tv12"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="5"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_6"
+        android:textColor="@color/white"
+        android:background="@mipmap/transparent_bg"
+        />
+</RelativeLayout>

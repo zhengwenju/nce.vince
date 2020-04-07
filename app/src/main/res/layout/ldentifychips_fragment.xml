@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@drawable/white_shape"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:text="对方NID"
+            android:textColor="@color/white6"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_12"
+            />
+
+        <EditText
+            android:id="@+id/nid_etv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:hint="请输入对方NID"
+            android:layout_weight="8"
+            android:textSize="@dimen/sp_16"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@drawable/white_shape"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:text="转让数量"
+            android:textColor="@color/white6"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_12"
+            />
+
+        <EditText
+            android:id="@+id/qty_etv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:hint="0.00"
+            android:enabled="false"
+            android:textSize="@dimen/sp_16"
+            android:layout_weight="6"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            app:layout_widthPercent="20%w"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="NCE"
+            android:textColor="@color/white6"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_12"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@drawable/white_shape"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            app:layout_widthPercent="20%w"
+            android:gravity="center"
+            android:text="转让总额"
+            android:textColor="@color/white6"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_12"
+            />
+
+        <EditText
+            android:id="@+id/input_price"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:background="@null"
+            android:hint="1000.00"
+            android:layout_weight="6"
+            android:textSize="@dimen/sp_16"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            app:layout_widthPercent="20%w"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="NCE"
+            android:textColor="@color/white6"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_12"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22">
+
+        <CheckBox
+            android:id="@+id/radioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:background="@null"
+            android:button="@mipmap/check" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/radioBtn"
+            android:text="我已阅读并同意"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toRightOf="@+id/text"
+            android:text="@string/invest28"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+    <com.bronet.blockchain.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="@dimen/dp_200"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:layout_marginBottom="@dimen/dp_25"
+        >
+
+        <TextView
+            android:id="@+id/protacol_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:textColor="@color/white10"
+            app:layout_marginRightPercent="30%w"
+            app:layout_textSizePercent="20%h" />
+
+    </com.bronet.blockchain.view.MyScrollView>
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/my_tran_tv"
+            android:layout_marginLeft="@dimen/sp_18"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invest35"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/my_tran_tv"
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:textSize="@dimen/sp_18"
+            android:text="@string/invest32"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

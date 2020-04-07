@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.github.tifezh.kchartlib.test" >
+4
+5    <uses-sdk
+5-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:5:5-74
+6        android:minSdkVersion="19"
+6-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:5:15-41
+7        android:targetSdkVersion="26" />
+7-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:11:5-15:82
+10        android:name="android.support.test.runner.AndroidJUnitRunner"
+10-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:11:22-83
+11        android:functionalTest="false"
+11-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:13:22-53
+13        android:label="Tests for com.github.tifezh.kchartlib.test"
+13-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:15:22-80
+14        android:targetPackage="com.github.tifezh.kchartlib.test" />
+14-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:12:22-78
+15
+16    <application
+16-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:7:5-9:19
+17        android:allowBackup="true"
+17-->[__tested_artifact__::kchartlib] D:\studio\ncecoin.android\kchartlib\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.0.1] C:\Users\川哥哥\.gradle\caches\transforms-2\files-2.1\124253cdc98bab9ad945017f097caf5c\core-1.0.1\AndroidManifest.xml:22:18-86
+19        android:debuggable="true"
+19-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:7:18-43
+20        android:label="@string/app_name"
+20-->[__tested_artifact__::kchartlib] D:\studio\ncecoin.android\kchartlib\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-41
+21        android:supportsRtl="true" >
+21-->[__tested_artifact__::kchartlib] D:\studio\ncecoin.android\kchartlib\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-35
+22        <uses-library android:name="android.test.runner" />
+22-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:8:9-60
+22-->D:\studio\ncecoin.android\kchartlib\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger5918888990941482553.xml:8:23-57
+23    </application>
+24
+25</manifest>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:background="@mipmap/aaa"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="@dimen/dp_190"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="@color/WHITE"
+                android:text="@string/prize_fail"
+                android:textSize="@dimen/dp_15"
+
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <TextView
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/d13"
+
+                android:textColor="@color/white"
+                android:background="@mipmap/pop19"
+                />
+
+            <TextView
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_70"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="@string/prize_again"
+                android:background="@mipmap/pop19"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

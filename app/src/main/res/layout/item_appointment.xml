@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:layout_marginBottom="@dimen/dp_5"
+    >
+
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/itemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_marginLeft="@dimen/sp_12"
+        android:layout_marginRight="@dimen/sp_12"
+        android:background="@drawable/new_tra_item_bg"
+        >
+
+        <TextView
+            android:id="@+id/nameHb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text="@string/transf37"
+            style="@style/font_style_bold"
+            app:layout_textSizePercent="3.5%w" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_57"
+            android:layout_marginTop="@dimen/dp_9"
+            android:text="20"
+            style="@style/font_style_bold"
+            app:layout_textSizePercent="3.0%w" />
+        <TextView
+            android:id="@+id/num_Hb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_marginLeft="@dimen/dp_90"
+            app:layout_textSizePercent="3.0%w"
+            android:layout_marginTop="@dimen/dp_28"
+            style="@style/font_style_bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transf38"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:textSize="@dimen/sp_11"
+            style="@style/font_style_bold"
+            android:layout_marginTop="@dimen/dp_27"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:layout_marginTop="@dimen/dp_28"
+            style="@style/font_style_bold"
+            android:layout_marginLeft="@dimen/dp_65"
+            app:layout_textSizePercent="3.0%w"
+
+
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successful"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dp_36"
+            android:text="2019/05/23"
+            style="@style/font_style_bold"
+            app:layout_textSizePercent="3%w" />
+
+        <TextView
+            android:id="@+id/successful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="@dimen/dp_7"
+            android:text="cheng"
+            android:textColor="#1976D2"
+            android:textSize="11sp" />
+
+
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white1"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_22"
+        android:layout_marginRight="@dimen/dp_22"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>

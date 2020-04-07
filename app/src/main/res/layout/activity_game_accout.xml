@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_vf"
+    android:orientation="vertical">
+    android:fitsSystemWindows="true"
+    <include layout="@layout/activity_head"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/game_zp_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/game_zp_bg"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/game_zp_dep"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/pkp_game_home"></RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/game_zp_triger"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/trager"></RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/game_zp_other"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/game_dep"></RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

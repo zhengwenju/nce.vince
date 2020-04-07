@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_vf"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assets"
+                android:textSize="@dimen/dp_24"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_30"
+                />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assets1"
+                android:textColor="@color/black4"
+                app:layout_marginLeftPercent="6.2%w"
+                app:layout_marginTopPercent="20.2%w"
+                app:layout_textSizePercent="3.4%w" />
+
+            <TextView
+                android:id="@+id/btn_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/chongbi_btn"
+                android:gravity="center"
+                android:text="@string/assets3"
+                android:textColor="@color/white"
+                app:layout_heightPercent="11.8%w"
+                app:layout_marginLeftPercent="14.25%w"
+                app:layout_marginTopPercent="32.3%w"
+                app:layout_textSizePercent="4.5%w"
+                app:layout_widthPercent="32.1%w" />
+
+            <TextView
+                android:id="@+id/btn_extract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/tibi_btn"
+                android:gravity="center"
+                android:text="@string/assets4"
+                android:textColor="@color/blue"
+                app:layout_heightPercent="11.8%w"
+                app:layout_marginRightPercent="14.25%w"
+                app:layout_marginTopPercent="32.3%w"
+                app:layout_textSizePercent="4.5%w"
+                app:layout_widthPercent="32.1%w" />
+            <!--<TextView
+                android:id="@+id/btn_bb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="47.8%w"
+                app:layout_marginLeftPercent="5.1%w"
+                app:layout_textSizePercent="3.4%w"
+                android:text="@string/assets5"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/black4"/>
+            <TextView
+                android:id="@+id/btn_hy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="47.8%w"
+                app:layout_marginLeftPercent="32.6%w"
+                app:layout_textSizePercent="3.4%w"
+                android:text="@string/assets6"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/black4"/>-->
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/assets7"
+                android:textColor="@color/black4"
+                app:layout_marginLeftPercent="6.2%w"
+                app:layout_marginTopPercent="56.2%w"
+                app:layout_textSizePercent="3.4%w" />
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="7.5%w"
+                app:layout_marginTopPercent="63%w">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets8"
+                    android:textColor="@color/black4"
+                    app:layout_marginLeftPercent="5.8%w"
+                    app:layout_textSizePercent="3.2%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets9"
+                    android:textColor="@color/black4"
+                    app:layout_marginLeftPercent="26%w"
+                    app:layout_textSizePercent="3.2%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets10"
+                    android:textColor="@color/black4"
+                    app:layout_marginLeftPercent="48.7%w"
+                    app:layout_textSizePercent="3.2%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/assets11"
+                    android:textColor="@color/black4"
+                    app:layout_marginLeftPercent="73%w"
+                    app:layout_textSizePercent="3.2%w" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <com.bronet.blockchain.view.MyRecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:layout_height="wrap_content"
+                app:layout_marginTopPercent="70.5%w"></com.bronet.blockchain.view.MyRecyclerView>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv"
+                android:text="@string/assets12"
+                android:textColor="@color/black1"
+                app:layout_marginLeftPercent="6.2%w"
+                app:layout_marginTopPercent="10.6%w"
+                app:layout_textSizePercent="3.75%w" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv"
+                android:textColor="@color/black4"
+                app:layout_marginLeftPercent="6.2%w"
+                app:layout_marginRightPercent="6.2%w"
+                app:layout_marginTopPercent="7.6%w"
+                app:layout_textSizePercent="3.5%w" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.zhy.android.percent.support.PercentRelativeLayout>

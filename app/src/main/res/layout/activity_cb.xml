@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_vf"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10">
+
+            <ImageView
+                android:layout_width="@dimen/dp_18"
+                android:layout_height="@dimen/dp_18"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@drawable/back_vf" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/assets19"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_24"
+            android:textStyle="bold"
+            app:layout_textSizePercent="5%w" />
+
+        <TextView
+            android:id="@+id/btn_jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_15"
+            android:text="充币记录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/login_background_vf"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coin_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="ETH"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_28"
+                android:textStyle="bold"
+                app:layout_marginTopPercent="8.8%w" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/link_name_linearlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:text="链名称"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_15"
+                    app:layout_marginTopPercent="2.8%w" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:background="@color/black10"
+                        android:text="ERC20"
+                        android:textColor="@color/white"></Button>
+
+                    <Button
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:background="@color/black10"
+                        android:text="TRC20"
+                        android:textColor="@color/black3"></Button>
+
+                    <Button
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="@dimen/dp_30"
+                        android:layout_marginLeft="@dimen/dp_8"
+
+                        android:background="@color/black10"
+                        android:text="OMNI"
+                        android:textColor="@color/black3"></Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_shape"
+                app:layout_heightPercent="13.4%w"
+                app:layout_marginLeftPercent="4%w"
+                app:layout_marginRightPercent="4%w"
+                app:layout_marginTopPercent="6.4%w">
+
+                <TextView
+                    android:id="@+id/input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_5"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="35%h" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_30"
+                app:layout_heightPercent="40%w"
+                app:layout_widthPercent="40%w" />
+
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_shape15"
+                android:text="@string/transaction5"
+                android:textColor="@color/white"
+                app:layout_heightPercent="11.6%w"
+                app:layout_marginBottomPercent="10%w"
+                app:layout_marginLeftPercent="14%w"
+                app:layout_marginRightPercent="14%w"
+                app:layout_marginTopPercent="10%w"
+                app:layout_textSizePercent="4.34%w" />
+
+            <TextView
+                android:id="@+id/tip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:fadeScrollbars="false"
+                android:padding="@dimen/dp_5"
+                android:textColor="@color/white" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.zhy.android.percent.support.PercentLinearLayout>

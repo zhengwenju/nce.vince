@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bronet.blockchain">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- camera -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeTitleTheme">
+        <activity android:name=".ui.MineRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name=".ui.MiningDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            />
+        <activity android:name=".ui.MyMiningListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".ui.MiningMachineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".ui.CenterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.help.JournalismActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.my.MyAssetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.TransferRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.MyNodeListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8791296902505750~5781771493" />
+
+        <activity
+            android:name=".ui.game.WebViewActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.bronet.blockchain.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.RebindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MyDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.WithMoneyAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.InvitationCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.AuxiliariesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.scancode.CommonScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.InvitationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.MyDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.MyGoodFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.my.FeedbackListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BuildIngActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WithdrawMoneyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WithdrawMoneyListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.XYActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.help.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.help.HelpListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.help.HelpDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ExchangeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ExchangeRecordListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.AppointContractCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.my.InputAssureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.my.ConfirmAssureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PrivateAccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.XYIdentiActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.ZRIdentifyActivity"
+            android:label="@string/title_activity_zridentify" />
+        <activity android:name=".ui.HistoricalRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity android:name=".ui.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".ui.gamepan.ZP_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.GameAccoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.gamepan.PrizeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.flop.Pkp_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.game.flop.PrizeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MutualInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.PwdManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ResetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WithdrawAdjustLogListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.games.Tiger_MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.games.BetActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.my.ImageViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.WithdrawMoneyLimitExplainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.games.TigerRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.NativeAdMobActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.InterstitialAdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.NodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.NodeDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.my.CreditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.TransferActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.TransferRewardRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.OpenContractActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.ExplainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

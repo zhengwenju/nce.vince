@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="0dip"
+    >
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_75"
+        android:background="@mipmap/db_bg"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/black4"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_alignBottom="@+id/tv1"
+            android:id="@+id/tv2"
+            android:textColor="@color/black4"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_10"
+            android:layout_height="wrap_content"
+            android:text="NCE"
+            android:layout_toRightOf="@+id/tv1"
+            />
+        <TextView
+            android:id="@+id/tv3"
+            android:textColor="@color/black4"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/sp_12"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_height="wrap_content"
+            android:text="@string/transf39"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

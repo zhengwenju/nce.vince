@@ -1,0 +1,4 @@
+key:daodaoxiong.jks//在工程里app目录下
+密码：daodaoxiong0601
+别名：daodaoxiong
+密码：daodaoxiong0601

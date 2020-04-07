@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/transfer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="认筹转让"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@drawable/text_tran"
+                />
+            <TextView
+                android:id="@+id/myTransfer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="认筹转让"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fram_bill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"></FrameLayout>
+    </LinearLayout>
+</LinearLayout>

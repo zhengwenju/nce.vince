@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bt_home"
+        android:icon="@drawable/btn_home_selector"
+        android:title="@string/item_home" />
+    <item
+        android:id="@+id/bt_quotation"
+        android:icon="@drawable/btn_quotation_selector"
+        android:title="@string/item_quotation" />
+    <item
+        android:id="@+id/bt_transaction"
+        android:icon="@drawable/btn_transaction_selector"
+        android:title="@string/item_transaction"
+        />
+    <item
+        android:id="@+id/bt_contract"
+        android:icon="@drawable/btn_contract_selector"
+        android:title="@string/item_contract" />
+    <item
+        android:id="@+id/bt_assets"
+        android:icon="@drawable/btn_assets_selector"
+        android:title="@string/item_personal" />
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <color name="white1">#FFD9D9D9</color>
+    <color name="white2">#FFF5F5F5</color>
+    <color name="white3">#FFE6E6E6</color>
+    <color name="white4">#FF808080</color>
+    <color name="white5">#FFF2F4F7</color>
+    <color name="white6">#FF8A8A8A</color>
+    <color name="white7">#FF999999</color>
+    <color name="white8">#FF666666</color>
+    <color name="white9">#FF899196</color>
+    <color name="white10">#FF757575</color>
+    <color name="white11">#FFF6F6F6</color>
+    <color name="white12">#f2f2f2</color>
+    <color name="white13">#fafafa</color>
+    <color name="white14">#cccccc</color>
+    <color name="white15">#ededee</color>
+    <color name="black">#000</color>
+    <color name="black1">#FF212121</color>
+    <color name="black2">#80212121</color>
+    <color name="black3">#FF899196</color>
+    <color name="black4">#FF757575</color>
+    <color name="black5">#FF232323</color>
+    <color name="black6">#FF8F8E8E</color>
+    <color name="black8">#f4f4f4</color>
+    <color name="black9">#ff6d728a</color>
+    <color name="black10">#ff595d70</color>
+
+
+
+    <color name="blue">#FF1976D2</color>
+    <color name="blue1">#FF5B6A91</color>
+    <color name="blue2">#FF1A7BD3</color>
+    <color name="blue3">#FF3EF2FD</color>
+    <color name="blue4">#FF5b6a91</color>
+    <color name="blue5">#FF5E9FDF</color>
+    <color name="blue6">#4877f6</color>
+
+    <color name="scan_bg">#7f000000</color>
+    <color name="red">#FFE81825</color>
+    <color name="red1">#FFFF5252</color>
+    <color name="green">#FF58DB64</color>
+    <color name="green1">#FF35ac7f</color>
+    <color name="yellow">#FFD700</color>
+    <color name="identi">#ff4877f8</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="WHITE">#FFFFFF</color>
+    <color name="BLACK">#000000</color>
+    <color name="BLUE">#0000FF</color>
+    <color name="GREEN">#00FF00</color>
+    <color name="RED">#FF0000</color>
+    <color name="TRANSPARENT">#11111111</color>
+    <color name="yellow1">#f44c4a</color>
+    <color name="vf_themecolor">#393b47</color>
+    <color name="vf_themecolor2">#474A5B</color>
+    <color name="gray3">#2c2d36</color>
+</resources>

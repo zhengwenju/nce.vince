@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ImageView
+       android:layout_marginTop="@dimen/dp_30"
+       android:layout_marginRight="@dimen/dp_5"
+       android:id="@+id/back_iv"
+       android:layout_gravity="right"
+       android:layout_width="@dimen/dp_16"
+       android:layout_height="@dimen/dp_16"
+       android:src="@mipmap/choose_image"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_marginTop="@dimen/dp_10"
+       android:id="@+id/recyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </androidx.recyclerview.widget.RecyclerView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

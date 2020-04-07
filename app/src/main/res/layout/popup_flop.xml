@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/aaaa"
+    android:background="#fba433"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:background="#fba433"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <LinearLayout
+            android:id="@+id/flopLinnear01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                style="@style/flopPopupwindowLinnearView">
+
+
+            <com.bronet.blockchain.ui.game.flop.custom.FlopTextView
+                android:id="@+id/popupFlop01"
+                style="@style/flopPopupwindow"
+                >
+
+            </com.bronet.blockchain.ui.game.flop.custom.FlopTextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/flopPopupwindowLinnearView">
+                <com.bronet.blockchain.ui.game.flop.custom.FlopTextView
+                    android:id="@+id/popupFlop02"
+                   style="@style/flopPopupwindow"
+                    >
+                </com.bronet.blockchain.ui.game.flop.custom.FlopTextView>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flopLinnear02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/flopLinnear01"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+               style="@style/flopPopupwindowLinnearView">
+                <com.bronet.blockchain.ui.game.flop.custom.FlopTextView
+                    android:id="@+id/popupFlop03"
+                  style="@style/flopPopupwindow">
+
+                </com.bronet.blockchain.ui.game.flop.custom.FlopTextView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+              style="@style/flopPopupwindowLinnearView">
+
+                <com.bronet.blockchain.ui.game.flop.custom.FlopTextView
+                    android:id="@+id/popupFlop04"
+                    style="@style/flopPopupwindow"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                </com.bronet.blockchain.ui.game.flop.custom.FlopTextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <GridView
+            android:id="@+id/flopGridView"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:numColumns="auto_fit"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:stretchMode="columnWidth"
+            android:layout_centerInParent="true"
+            android:verticalSpacing="10dp"
+            android:visibility="gone"
+            >
+        </GridView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

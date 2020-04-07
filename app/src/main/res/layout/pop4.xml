@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="50%w"
+        android:background="@drawable/blue_shape2"
+        app:layout_marginRightPercent="8%w"
+        app:layout_marginLeftPercent="8%w">
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d20"
+            android:layout_centerHorizontal="true"
+            app:layout_textSizePercent="5%w"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            app:layout_marginTopPercent="3%w"
+            android:layout_alignParentTop="true" />
+        <LinearLayout
+            android:layout_below="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_33"
+            android:layout_marginTop="@dimen/dp_17"
+            >
+
+
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_56"
+                android:layout_weight="7"
+                android:background="#00000000"
+                android:hint="@string/d20"
+                android:inputType="textPassword"
+                android:lineHeight="1dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white6"
+                android:textSize="@dimen/sp_16" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/hidden_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/hidden_password_vf"
+                    />
+                <ImageView
+                    android:id="@+id/display_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/display_pwd_vf"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            app:layout_marginBottomPercent="27%w"
+            android:layout_marginLeft="@dimen/dp_32"
+            android:layout_marginRight="@dimen/dp_33"
+            android:background="@color/white1"/>
+
+
+
+        <TextView
+            android:id="@+id/btn_no"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="15%w"
+            app:layout_widthPercent="40%w"
+            app:layout_marginBottomPercent="3%w"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_blue_tr_bg"
+            android:text="@string/d13"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            app:layout_textSizePercent="5%w"/>
+        <TextView
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="15%w"
+            app:layout_widthPercent="40%w"
+            app:layout_marginBottomPercent="3%w"
+            android:layout_marginRight="@dimen/dp_22"
+            android:background="@drawable/btn_blue_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/basic_data15"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_textSizePercent="5%w"/>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentRelativeLayout>

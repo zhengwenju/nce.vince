@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/assure_bg"
+                android:padding="@dimen/dp_15"
+                app:layout_marginTopPercent="15%w">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NCE限额认筹套餐"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_heightPercent="10.2%w"
+                    app:layout_marginLeftPercent="0%w"
+                    app:layout_marginTopPercent="2.8%w"
+                    app:layout_widthPercent="80.5%w" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="9.8%w">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:background="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/identi"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:text="该认筹份额不能增加，只可限时购买。"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"
+                    app:layout_heightPercent="10.2%w"
+                    app:layout_marginLeftPercent="0%w"
+                    app:layout_marginTopPercent="55%w" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/white_shape"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    app:layout_marginTopPercent="70%w">
+
+                    <TextView
+                        android:id="@+id/num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="购买份额" />
+
+                    <EditText
+                        android:id="@+id/eth_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_100"
+                        android:layout_toRightOf="@+id/num"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="请输入购买份额"
+                        android:text="1"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/reduce_btn"
+                        android:layout_centerVertical="true"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/dp_50"
+                        android:text="-"
+                        android:textSize="@dimen/sp_20" />
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/add_btn"
+                        android:layout_centerVertical="true"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:text="+"
+                        android:gravity="center|top"
+                        android:textSize="@dimen/sp_20" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/white_shape"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    app:layout_marginTopPercent="88%w">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/paymentCurrency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付币种" />
+
+                    <EditText
+                        android:layout_centerVertical="true"
+                        android:id="@+id/bz_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/paymentCurrency"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:textSize="@dimen/sp_16"
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@drawable/white_shape"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="8dip"
+                    android:paddingBottom="8dip"
+                    app:layout_marginTopPercent="106%w">
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:id="@+id/paymentAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付金额" />
+
+                    <EditText
+                        android:id="@+id/edi_price"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_toRightOf="@+id/paymentAmount"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:hint="0.0"
+                        android:textSize="@dimen/sp_16" />
+
+                    <TextView
+                        android:id="@+id/bz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/white6"
+                        android:textSize="@dimen/sp_12" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="124%w">
+
+                    <TextView
+                        android:id="@+id/yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户余额："
+                        android:textSize="@dimen/sp_12" />
+
+                    <TextView
+                        android:id="@+id/balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/yue"
+                        android:text="123"
+                        android:textColor="@color/white6"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+                <com.bronet.blockchain.view.MyScrollView
+                    android:scrollbars="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:layout_marginRight="@dimen/dp_2"
+                    android:layout_marginBottom="@dimen/dp_25"
+                    app:layout_marginTopPercent="133%w"
+                    app:layout_heightPercent="25%w">
+
+                    <TextView
+                        android:id="@+id/tip_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:padding="@dimen/dp_5"
+                        android:textColor="@color/white10"
+                        app:layout_marginRightPercent="30%w"
+                        app:layout_textSizePercent="20%h" />
+
+                </com.bronet.blockchain.view.MyScrollView>
+                <RelativeLayout
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_marginTopPercent="160%w">
+
+                    <CheckBox
+                        android:id="@+id/radioBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_4"
+                        android:background="@null"
+                        android:button="@mipmap/check" />
+
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:layout_toRightOf="@+id/radioBtn"
+                        android:text="我已阅读并同意"
+                        android:textSize="@dimen/sp_14" />
+
+                    <TextView
+                        android:id="@+id/content_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_2"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_toRightOf="@+id/text"
+                        android:text="@string/invest27"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/sp_14" />
+                </RelativeLayout>
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <Button
+            android:id="@+id/purchase_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/blue"
+            android:text="@string/invest26"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="10%w"
+        app:layout_heightPercent="10%w"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Large.Inverse"/>
+</RelativeLayout>

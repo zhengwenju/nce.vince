@@ -1,0 +1,103 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.bronet.blockchain" //
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "4.0.3"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+//            buildConfigField "boolean", "LOG_DEBUG", "false" //不显示log
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testCompile 'junit:junit:4.12'
+
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    //百分比
+    implementation 'com.zhy:percent-support-extends:1.1.1'
+    //滑动选择
+//    compile 'com.github.open-android:WheelPicker:v1.0.0'
+    //顶部导航栏
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //rxjava rxandroid
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    // json
+    implementation 'com.google.code.gson:gson:2.8.4'
+    //配合Rxjava 使用
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.orhanobut:logger:1.15'
+    //跑马灯
+    implementation 'com.sunfusheng:marqueeview:1.3.0'
+
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    //滑动选择
+    implementation 'com.github.open-android:WheelPicker:v1.0.0'
+
+    //富文本
+    implementation 'com.zzhoujay.richtext:richtext:3.0.7'
+    implementation 'com.zzhoujay:html:1.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //上拉下拉
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-20'
+
+    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.android.support:appcompat-v7:29.1.0'
+//    implementation 'com.google.android.gms:play-services-ads:17.1.1'
+
+    implementation project(':MPChartLib')
+//    implementation 'com.facebook.android:audience-network-sdk:5.+'
+//    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'  //
+
+}
+
+// This is to fix the errors : java.lang.NoClassDefFoundError: Failed resolution of: Landroid/view/View$OnUnhandledKeyEventListener;
+
